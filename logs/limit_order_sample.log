@@ -1,0 +1,7 @@
+2025-06-01 10:22:15 | INFO     | trading_bot.client | BinanceFuturesClient initialised (base_url=https://testnet.binancefuture.com)
+2025-06-01 10:22:15 | INFO     | trading_bot.cli | CLI invoked with args: {'command': 'place', 'log_level': 'INFO', 'symbol': 'ETHUSDT', 'side': 'SELL', 'type': 'LIMIT', 'qty': 0.01, 'price': 3200.0}
+2025-06-01 10:22:15 | INFO     | trading_bot.orders | Order request | symbol=ETHUSDT side=SELL type=LIMIT qty=0.01 price=3200.0
+2025-06-01 10:22:15 | INFO     | trading_bot.client | Placing LIMIT SELL order | symbol=ETHUSDT qty=0.01 price=3200.0
+2025-06-01 10:22:15 | DEBUG    | trading_bot.client | REQUEST  POST /fapi/v1/order  params={'symbol': 'ETHUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': 3200.0, 'timeInForce': 'GTC', 'timestamp': 1748769735102}
+2025-06-01 10:22:16 | DEBUG    | trading_bot.client | RESPONSE POST /fapi/v1/order  status=200  body={"orderId":2910847365,"symbol":"ETHUSDT","status":"NEW","clientOrderId":"def456uvw","price":"3200","avgPrice":"0","origQty":"0.01","executedQty":"0","type":"LIMIT","side":"SELL","timeInForce":"GTC"}
+2025-06-01 10:22:16 | INFO     | trading_bot.orders | Order placed | orderId=2910847365 status=NEW executedQty=0.0

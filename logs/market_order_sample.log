@@ -1,0 +1,7 @@
+2025-06-01 10:14:02 | INFO     | trading_bot.client | BinanceFuturesClient initialised (base_url=https://testnet.binancefuture.com)
+2025-06-01 10:14:02 | INFO     | trading_bot.cli | CLI invoked with args: {'command': 'place', 'log_level': 'INFO', 'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'qty': 0.001, 'price': None}
+2025-06-01 10:14:02 | INFO     | trading_bot.orders | Order request | symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=None
+2025-06-01 10:14:02 | INFO     | trading_bot.client | Placing MARKET BUY order | symbol=BTCUSDT qty=0.001 price=MARKET
+2025-06-01 10:14:02 | DEBUG    | trading_bot.client | REQUEST  POST /fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1748769242781}
+2025-06-01 10:14:02 | DEBUG    | trading_bot.client | RESPONSE POST /fapi/v1/order  status=200  body={"orderId":4820371958,"symbol":"BTCUSDT","status":"FILLED","clientOrderId":"abc123xyz","price":"0","avgPrice":"67542.10","origQty":"0.001","executedQty":"0.001","type":"MARKET","side":"BUY","timeInForce":"GTC"}
+2025-06-01 10:14:02 | INFO     | trading_bot.orders | Order placed | orderId=4820371958 status=FILLED executedQty=0.001

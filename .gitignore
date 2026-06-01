@@ -1,0 +1,12 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Runtime logs are generated locally. Keep curated sample logs with ! patterns.
+logs/*.log
+!logs/*_sample.log
